@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM Kahening - Desa Sukamanah</title>
+    <!-- Memuat Tailwind CSS untuk desain responsif dan modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Memuat file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER - Logo dan Judul Utama -->
+    <header class="bg-blue-800 text-white p-6 md:p-8 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo dan Nama Lembaga -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <div class="flex items-center justify-center md:justify-start">
+                    <!-- Gambar Logo yang Diunggah -->
+                    <img src="logokimkahening.png" alt="Logo KIM Kahening" class="h-20 w-auto mr-3">
+                    <span class="text-xl font-bold tracking-tight">KIM Kahening</span>
+                </div>
+                <p class="mt-1 text-sm text-gray-300">Kelompok Informasi Masyarakat Desa Sukamanah, Kec. Paseh</p>
+            </div>
+
+            <!-- Navigasi -->
+            <nav>
+                <ul class="flex space-x-6 items-center">
+                    <li><a href="#beranda" class="hover:text-yellow-400 font-semibold transition-colors">Beranda</a></li>
+                    <li><a href="#berita" class="hover:text-yellow-400 transition-colors">Berita</a></li>
+                    <li><a href="#galeri" class="hover:text-yellow-400 transition-colors">Galeri</a></li>
+                    <li><a href="#tentang-kami" class="hover:text-yellow-400 transition-colors">Tentang Kami</a></li>
+                    <!-- Tombol Keluar Baru -->
+                    <li><a href="login.html" class="bg-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-600 transition-colors">Keluar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container mx-auto mt-8 p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Bagian Utama: Konten Halaman -->
+        <div class="col-span-1 md:col-span-2 space-y-8">
+            <!-- Bagian Beranda -->
+            <section id="beranda" class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Beranda</h3>
+                <p class="text-gray-600 mb-4">Selamat datang di website resmi Kelompok Informasi Masyarakat (KIM) Kahening Desa Sukamanah. Di sini Anda bisa mendapatkan informasi terbaru seputar kegiatan dan perkembangan di desa kami.</p>
+                <a href="#berita" class="inline-block text-blue-600 font-semibold hover:underline">Lihat Berita Terbaru &rarr;</a>
+            </section>
+            
+            <!-- Bagian Berita -->
+            <section id="berita" class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Berita</h3>
+                <!-- Contoh Berita 1 -->
+                <div class="mb-4">
+                    <h4 class="font-bold text-xl text-gray-800">Pemberdayaan UMKM Desa Melalui Pelatihan Digital Marketing</h4>
+                    <p class="text-sm text-gray-500 mb-2">27 Agustus 2024</p>
+                    <p class="text-gray-600 text-sm">Paseh, 27 Agustus 2024 - Kelompok Informasi Masyarakat (KIM) Kahening hari ini menyelenggarakan pelatihan digital marketing untuk pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) di Desa Sukamanah...</p>
+                </div>
+                <!-- Contoh Berita 2 -->
+                <div class="mb-4">
+                    <h4 class="font-bold text-xl text-gray-800">Panen Raya Bersama Petani Desa Sukamanah</h4>
+                    <p class="text-sm text-gray-500 mb-2">25 Agustus 2024</p>
+                    <p class="text-gray-600 text-sm">Kegiatan panen raya berjalan sukses, dihadiri oleh kepala desa dan seluruh petani...</p>
+                </div>
+                <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">Lihat Semua Berita &rarr;</a>
+            </section>
+
+            <!-- Bagian Galeri -->
+            <section id="galeri" class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Galeri</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Contoh Gambar Galeri -->
+                    <img src="IMG_0321.JPG" alt="Galeri 1" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="IMG_0322.JPG" alt="Galeri 2" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                    <img src="IMG_0323.jpg" alt="Galeri 3" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                </div>
+            </section>
+
+            <!-- Bagian Tentang Kami -->
+            <section id="tentang-kami" class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Tentang Kami</h3>
+                <p class="text-gray-600 leading-relaxed">Kelompok Informasi Masyarakat (KIM) Kahening adalah sebuah lembaga yang dibentuk untuk menjadi pusat informasi dan komunikasi bagi masyarakat Desa Sukamanah. Kami berdedikasi untuk menyebarkan informasi positif, edukatif, dan membangun, serta menjadi jembatan antara pemerintah desa dan warganya.</p>
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-800">Visi Kami</h4>
+                    <p class="text-gray-600 text-sm">Menjadi pusat informasi yang terpercaya dan proaktif dalam memajukan kesejahteraan masyarakat Desa Sukamanah.</p>
+                </div>
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-800">Misi Kami</h4>
+                    <ul class="list-disc list-inside text-gray-600 text-sm">
+                        <li>Menyediakan informasi yang akurat dan relevan.</li>
+                        <li>Mengadakan pelatihan dan kegiatan edukatif.</li>
+                        <li>Mendorong partisipasi aktif masyarakat dalam pembangunan.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar: Informasi Tambahan -->
+        <div class="col-span-1 space-y-6">
+            <!-- Kotak Komentar -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Komentar</h3>
+                
+                <!-- Formulir Komentar -->
+                <form id="comment-form" class="mb-6">
+                    <div class="mb-4">
+                        <label for="comment-name" class="block text-sm font-medium text-gray-700 mb-1">Nama</label>
+                        <input type="text" id="comment-name" placeholder="Nama Anda" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="comment-body" class="block text-sm font-medium text-gray-700 mb-1">Komentar</label>
+                        <textarea id="comment-body" rows="4" placeholder="Tulis komentar Anda di sini..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 text-white font-semibold py-2 rounded-md shadow hover:bg-green-700 transition-colors">Kirim Komentar</button>
+                </form>
+
+                <!-- Daftar Komentar (Akan diisi oleh JavaScript) -->
+                <div id="comments-list" class="space-y-4">
+                    <!-- Contoh Komentar Statis -->
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <p class="font-semibold text-gray-800">Bapak Ujang</p>
+                        <p class="text-sm text-gray-500">27 Agustus 2024</p>
+                        <p class="mt-2 text-gray-700">Pelatihan ini sangat bermanfaat bagi para pelaku UMKM, semoga terus berlanjut!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kotak Kontak -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Hubungi Kami</h3>
+                <p class="text-gray-600 text-sm mb-2">E-mail: kim.kahening@email.com</p>
+                <p class="text-gray-600 text-sm">Telp: 0812-3456-7890</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2024 KIM Kahening. Semua Hak Cipta Dilindungi.</p>
+            <p>Didesain dan dikelola oleh KIM KAHENING Desa Sukamanah.</p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>

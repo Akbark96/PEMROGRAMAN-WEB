@@ -1,0 +1,23 @@
+/* File: style.css */
+
+/* Gaya dasar untuk elemen body, menggunakan font Inter dan warna latar belakang abu-abu muda */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Gaya tambahan untuk animasi fade-in pada komentar baru */
+.comments-list .new-comment {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
